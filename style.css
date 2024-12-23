@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    pad: 0;
+}
+.home{
+    background-image: url("image/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.sfont{
+    width: 170px;
+}
+.letter{
+    
+        color: #fff;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: -.4px;
+        cursor: pointer;
+        z-index: 10000;
+        letter-spacing: px;
+
+        
+}
+.button1{
+    background-color: orange;
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    font-family: Gilroy;
+    font-size: 18px;
+    
+}
+.button2{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: Gilroy;
+    font-size: 18px;
+    border-radius:10px ;
+    border: none;
+    
+
+}
+.leftimage{
+    
+        height: 450px !important;
+        width: 250px !important;
+        position: absolute;
+        top: 0;
+        margin-top: 80px;
+}
+.rightimage{
+    
+        height: 450px !important;
+        width: 250px !important;
+        position: absolute;
+        top: 0;
+        margin-top: 80px;
+    }
+
+    
+      .title{
+        width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    padding:20px;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy_Bold;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 55px;
+   
+   
+}
+
+.searchInputWrapper {
+    position: relative;
+    
+  }
+  
+  .searchInput {
+    width: 30rem;
+    height: 3rem;
+    padding: 0 1rem; 
+    border-radius: 2rem;
+    border: none;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  ::placeholder {
+    color: #a1a1a1;
+  }
+  
+  /* hide the placeholder text on focus */
+  :focus::placeholder {
+    text-indent: -999px
+  }
+  
+  .searchInput:focus {
+    outline: none;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .searchInputIcon {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.5rem;
+    color: #a1a1a1;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .container:focus-within > 
+  .searchInputWrapper > .searchInputIcon {
+    right: 0.2rem;
+  }
+  .off{
+    width: 250px;
+    height:50vh ;
+   
+    margin-top: 20px;
+    position: absolute;
+  }
+  .img1{
+    margin-left:120px;
+  }
+  .img2{
+    margin-left:160px;
+  }
+  .img3{
+    margin-left:40px;
+  }
+  .img4{
+    margin-left:70px;
+  }
+.about{
+  height: 100vh;
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  min-height: 100vh;
+  padding: 0 35px;
+ 
+} 
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+
+.carousel .card{
+  height: 220px;
+  list-style: none;
+  background: #fff;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 16px;
+  display: flex;
+  cursor: pointer;
+  scroll-snap-align: start;
+
+  
+}
+.carousel .dragging .card{
+  cursor: grab;
+  user-select: none;
+}
+.wrapper{
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+  
+
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 100px);
+  overflow-x: auto;
+  /* scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0; */
+  
+  overflow: hidden;
+  
+}
+.carousel   ::-webkit-scrollbar {
+ display: none;
+}
+.carousel .dragging{
+  scroll-behavior: auto;
+  scroll-behavior: auto;
+}
+.card .img{
+  width: 170px;
+  height: 180px;
+  border-radius: 50%;
+  border: none;
+
+}
+
+.card .img img {
+  width: 180px;
+  height: 203px;
+  object-fit:cover;
+  border-radius: 50%;
+  border: none;
+
+}
+.wrapper i {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  box-shadow: 0 3px 6px rgb(0,0,0,0.23);
+
+}
+.wrapper i:first-child {
+  left: -22px;
+ 
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.carousel  .dragging  .card {
+  cursor: grab;
+  user-select: none;
+
+}
+
+.order{
+  margin-top: 100px;
+}
+
+
+
+
+
+
+.carousel5 {
+  max-width: 90rem;
+  overflow: hidden;
+}
+
+
+.wrapper5 {
+  display: flex;
+  animation: roll 35s linear infinite;
+  
+}
+
+@keyframes roll {
+  to {
+    transform: translate(calc(-5 * 20rem));
+  }
+}
+
+.scan{
+  height:60vh ;
+  width: 100%;
+}
+.scan2{
+  height: 40vh;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.footer{
+  background-color: #cecdcd;
+  height: 100vh;
+  width: 100%;
+}
+.swiggyimg{
+  width: 200px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.social{
+  margin-left: 900px;
+  
+}
